@@ -1,7 +1,7 @@
 import Header from "@/components/Header"
 import { Box } from "@chakra-ui/react"
 
-const Profile = () => {
+const Works = () => {
     return (
         <Box>
             <Header />
@@ -10,4 +10,4 @@ const Profile = () => {
 )
 }
 
-export default Profile
+export default Works
