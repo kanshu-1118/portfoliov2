@@ -1,4 +1,4 @@
-import { skillFile, worksArrayType } from "@/types/Workstype";
+import { skillFile, worksArrayType } from "../../types/Workstype";
 
 const skillArray : skillFile = [
     'html5',

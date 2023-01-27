@@ -2,7 +2,7 @@ import React, { NewLifecycle } from 'react'
 import { Flex, Text } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import worksArray from './api/works'
-import Header from '@/components/Header'
+import Header from '../components/Header'
 
 const App : NextPage = () => {
 
