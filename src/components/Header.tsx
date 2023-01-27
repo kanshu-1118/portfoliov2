@@ -1,14 +1,23 @@
+import app from '@/pages/App';
 import { Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import NextLink from 'next/link';
 
 const Header = () => {
     return (
-        <Flex w="100vw" h={"66px"} justifyContent="end" boxShadow={"0px 0px 4px 0px rgba(0,0,0,0.25)"}>
+        <Flex position={"fixed"} zIndex={"100"} bgColor="white" w="100vw" h={"66px"} justifyContent="end" boxShadow={"0px 0px 4px 0px rgba(0,0,0,0.25)"}>
             <Flex gap={"48px"} paddingRight={"64px"}>
-                <Box as='p'><Text as={"a"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>TOP</Text></Box>
-                <Box as='p'><Text as={"a"} lineHeight={"66px"} fontSize={"20px"}>WORKS</Text></Box>
-                <Box as='p'><Text as={"a"} lineHeight={"66px"} fontSize={"20px"}>PROFILE</Text></Box>
-                <Box as='p'><Text as={"a"} lineHeight={"66px"} fontSize={"20px"}>CONTACT</Text></Box>
+                <NextLink href={`/`} passHref>
+                    <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>TOP</Text>
+                </NextLink>
+                <NextLink href={`/`} passHref>
+                    <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>WORKS</Text>
+                </NextLink>
+                <NextLink href={`/profile`} passHref>
+                    <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>PROFILE</Text>
+                </NextLink>
+                <NextLink href={`App`} passHref>
+                    <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>CONTACT</Text>
+                </NextLink>
             </Flex>
         </Flex>
     )

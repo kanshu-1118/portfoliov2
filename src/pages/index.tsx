@@ -4,9 +4,7 @@ import App from './App'
 
 const Home = () => {
   return (
-    <ChakraProvider>
       <App />
-    </ChakraProvider>
   )
 }
 
