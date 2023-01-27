@@ -1,4 +1,4 @@
-import Header from ".././components/Header"
+import Header from "@/components/Header"
 import { Box } from "@chakra-ui/react"
 
 const profile = () => {

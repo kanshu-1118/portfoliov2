@@ -1,4 +1,3 @@
-import app from '@/pages/App';
 import { Box, Flex, Text } from '@chakra-ui/react'
 import NextLink from 'next/link';
 

@@ -1,15 +1,4 @@
-import { skillFile, worksArrayType } from "../../types/Workstype";
-
-const skillArray : skillFile = [
-    'html5',
-    'pug',
-    'css',
-    'scss',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Next',
-];
+import { worksArrayType } from "@/types/Workstype";
 
 const worksArray : worksArrayType = {
     ArrayList : [
