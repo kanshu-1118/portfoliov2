@@ -8,9 +8,6 @@ const App : NextPage = () => {
 
 
     const array = worksArray.ArrayList
-    {worksArray.ArrayList.map((e : any) => {
-        console.log(e);
-    })}
 
     return (
         <>
