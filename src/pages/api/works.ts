@@ -1,4 +1,4 @@
-import { worksArrayType } from "@/types/Workstype";
+import { worksArrayType } from "@/types/worksType";
 
 const worksArray : worksArrayType = {
     ArrayList : [
