@@ -35,9 +35,9 @@ const WorksSlide = ( props : slideprops ) => {
                             <Center border={"1px solid #000"} borderRadius={"8px"} padding={"4px 16px"}><Text suppressHydrationWarning fontSize={"12px"}>{props.main}</Text></Center>
                             <Center border={"1px solid #000"} borderRadius={"8px"} padding={"4px 16px"}><Text suppressHydrationWarning fontSize={"12px"}>{props.time}時間</Text></Center>
                         </Flex>
-                        <Flex>
+                        {/* <Flex>
                             <Text fontSize={"14px"}>【 html,css,js 】</Text>
-                        </Flex>
+                        </Flex> */}
                     </Flex>
                     <Text suppressHydrationWarning fontSize={"16px"}>
                         {props.text}

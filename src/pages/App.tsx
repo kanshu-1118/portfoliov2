@@ -62,7 +62,7 @@ const App : NextPage = () => {
         <Box overflow={"hidden"}>
             <Header />
             <Flex id='firstview' w="100vw" h="100vh" alignItems={"center"} justifyContent={"center"} flexFlow={"column"}>
-                <Text as={"h1"}>しもかわかんしゅうのポートフォリオ</Text>
+                <Text as={"h1"} fontWeight="bold" fontSize={"40px"}>KANSHU SHIMOKAWA</Text>
             </Flex>
             <Center id='concept' w={"100vw"} h={"80vh"} gap={"56px"} flexFlow={"column"} position="relative">
                 <Text fontSize={"30px"} fontWeight="900" textAlign={"center"}>人が行き交う<br/>「大都市」みたいな人に</Text>
@@ -96,7 +96,7 @@ const App : NextPage = () => {
                             <Text>2022年開催若年者ものづくり大会 銅賞受賞</Text>
                         </Flex>
                     </Flex>
-                    <Link href={`/Profile`} passHref >
+                    <Link href={`/profile`} passHref >
                         <Center w={"240px"} h={"48px"} bgColor={"#000"}><Text color={"#fefefe"} fontWeight={"900"}>プロフィールをもっと見る</Text></Center>
                     </Link>
                 </Flex>
