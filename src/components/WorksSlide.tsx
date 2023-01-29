@@ -21,7 +21,7 @@ interface slideprops{
 
 const WorksSlide = ( props : slideprops ) => {
     return (
-        <Flex w={"600px"} h={"400px"} borderRadius={"8px"} bg={`linear-gradient(${props.imageColor}, #FEFEFE)`} boxShadow={" 2px 2px 2px rgba(0,0,0,0.25)"} overflow={"hidden"} position={"relative"}>
+        <Flex w={"600px"} h={"400px"} borderRadius={"8px"} bg={`linear-gradient(#efefef, #FEFEFE)`} boxShadow={" 2px 2px 2px rgba(0,0,0,0.25)"} overflow={"hidden"} position={"relative"}>
             <Flex alignItems={"center"} w={"300px"} paddingLeft={"32px"}>
                 <Flex flexFlow={"column"} gap={"32px"}>
                     <Text suppressHydrationWarning fontWeight={"900"} fontSize={"22px"}>{props.name}</Text>
@@ -43,7 +43,7 @@ const WorksSlide = ( props : slideprops ) => {
                         {props.text}
                     </Text>
                     <Link href={props.url} passHref>
-                        <Center w={"100%"} as='button' border={"1px solid #000"} padding={"4px 8px"}><Text>作品を見る</Text></Center>
+                        <Center w={"100%"} as='button' borderRadius={"8px"} bgColor={props.imageColor} padding={"8px 0"}><Text fontWeight={"bold"} color={"#fefefe"}>作品を見る</Text></Center>
                     </Link>
                 </Flex>
             </Flex>

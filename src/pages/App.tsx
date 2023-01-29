@@ -64,7 +64,7 @@ const App : NextPage = () => {
             <Flex id='firstview' w="100vw" h="100vh" alignItems={"center"} justifyContent={"center"} flexFlow={"column"}>
                 <Text as={"h1"}>しもかわかんしゅうのポートフォリオ</Text>
             </Flex>
-            <Center id='concept' w={"100vw"} h={"80vh"} gap={"56px"} flexFlow={"column"} border="1px solid #000"  position="relative">
+            <Center id='concept' w={"100vw"} h={"80vh"} gap={"56px"} flexFlow={"column"} position="relative">
                 <Text fontSize={"30px"} fontWeight="900" textAlign={"center"}>人が行き交う<br/>「大都市」みたいな人に</Text>
                 <Text fontSize={"16px"} textAlign={"center"} lineHeight={"40px"}>
                     僕はすごく人に恵まれて生きているなと感じ生きてきました<br />
@@ -111,8 +111,8 @@ const App : NextPage = () => {
                             )
                         })}
                     </Flex>
-                    <Center id='leftbtn' width={"40px"} height={"40px"} bgColor={"#939393"} borderRadius={"999px"} position={"absolute"} top={`${200-20}px`} left={`${620+340}px`} zIndex={"10"} onClick={left}></Center>
-                    <Center id='rightbtn' width={"40px"} height={"40px"} bgColor={"#939393"} borderRadius={"999px"} position={"absolute"} top={`${200-20}px`} left={`${620 + 680 +340}px`} zIndex={"10"} onClick={right}></Center>
+                    <Center id='leftbtn' width={"40px"} height={"40px"} bgColor={"#9393937e"} borderRadius={"999px"} position={"absolute"} top={`${200-20}px`} left={`${620+340}px`} zIndex={"10"} onClick={left}><Box as='img' src='./img/Arrow.svg' /></Center>
+                    <Center id='rightbtn' width={"40px"} height={"40px"} bgColor={"#9393937e"} borderRadius={"999px"} position={"absolute"} top={`${200-20}px`} left={`${620 + 680 +340}px`} zIndex={"10"} onClick={right}><Box as='img' src='./img/Arrow.svg' transform={"rotateY(180deg)"} /></Center>
                 </Box>
                 <Flex gap={"8px"}>
                     {randamArray.map((evn:any,inde:number) => {

@@ -12,7 +12,7 @@ const Works : NextPage = () => {
         <Box>
             <Header />
             <Center padding={"106px 0 40px 0"}>
-                <Text fontSize={"46px"}>Works</Text>
+                <Text fontSize={"46px"} fontWeight={"bold"}>Works</Text>
             </Center>
             <Flex flexWrap={"wrap"} justifyContent={"center"} gap={"24px"}>
                 {array.map((e : any,i : any) => {
