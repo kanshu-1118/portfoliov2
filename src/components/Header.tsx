@@ -12,7 +12,7 @@ const Header : NextComponentType = () => {
                 <NextLink href={`/Works`} passHref>
                     <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>WORKS</Text>
                 </NextLink>
-                <NextLink href={`/Profile`} passHref>
+                <NextLink href={`/profile`} passHref>
                     <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>PROFILE</Text>
                 </NextLink>
                 {/* <NextLink href={`/Contact`} passHref>
