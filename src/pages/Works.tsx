@@ -24,13 +24,13 @@ const Works : NextPage = () => {
             <Center id='TRAING' w={"100vw"} h={"80vh"} gap={"48px"} flexFlow={"column"} position="relative">
                 <Text as={"h3"} fontSize={"46px"} fontWeight={"900"} >CONTACT</Text>
                 <Flex gap={"32px"}>
-                    <Link href={"https://zenn.dev/kanshu"} passHref>
+                    <Link href={"https://zenn.dev/kanshu"} target={"_blank"} passHref>
                         <Box as='img' src='./img/zenn.svg' width={"60px"}></Box>
                     </Link>
-                    <Link href={"https://github.com/kanshu-1118"} passHref>
+                    <Link href={"https://github.com/kanshu-1118"} target={"_blank"} passHref>
                         <Box as='img' src='./img/github.svg' width={"60px"}></Box>
                     </Link>
-                    <Link href={"https://twitter.com/meeeeeeg_75"} passHref>
+                    <Link href={"https://twitter.com/meeeeeeg_75"} target={"_blank"} passHref>
                         <Box as='img' src='./img/twitter.svg' width={"60px"}></Box>
                     </Link>
                 </Flex>
