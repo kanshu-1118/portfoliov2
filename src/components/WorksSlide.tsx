@@ -42,7 +42,7 @@ const WorksSlide = ( props : slideprops ) => {
                     <Text suppressHydrationWarning fontSize={"16px"}>
                         {props.text}
                     </Text>
-                    <Link href={props.url} passHref>
+                    <Link href={props.url} target={"_blank"} passHref>
                         <Center w={"100%"} as='button' borderRadius={"8px"} bgColor={props.imageColor} padding={"8px 0"}><Text fontWeight={"bold"} color={"#fefefe"}>作品を見る</Text></Center>
                     </Link>
                 </Flex>
