@@ -16,20 +16,20 @@ const worksArray : worksArrayType = {
         imageColor : "#4F6186",
         url : "https://click.ecc.ac.jp/ecc/ksimokawa/cosmo-cafe/",
         },
-        {
-        id : "free",
-        name : "freeme",
-        type : "エンジニア",
-        langage : ['html',"css"],
-        nop : "チーム制作",
-        time : 30 ,
-        sch : "1年生前期",
-        main : "アプリ",
-        img : "./img/freeme.jpg",
-        text : `1年生の夏休みの時期に制作したYahoo!Japan主催の学生ハッカソン"Hack U"にて制作したものです`,
-        imageColor : "#4ECCC3",
-        url : ""
-        },
+        // {
+        // id : "free",
+        // name : "freeme",
+        // type : "エンジニア",
+        // langage : ['html',"css"],
+        // nop : "チーム制作",
+        // time : 30 ,
+        // sch : "1年生前期",
+        // main : "アプリ",
+        // img : "./img/freeme.jpg",
+        // text : `1年生の夏休みの時期に制作したYahoo!Japan主催の学生ハッカソン"Hack U"にて制作したものです`,
+        // imageColor : "#4ECCC3",
+        // url : ""
+        // },
         {
         id : "non",
         name : "NONST",
@@ -42,7 +42,7 @@ const worksArray : worksArrayType = {
         img : "./img/nonst.jpg",
         text : '1年生の夏休み時期に制作した学内短期制作にて制作したものです、愚痴を聞く人と話す人のマッチングアプリサービスです。',
         imageColor : "#0A345A",
-        url : "",
+        url : "https://nonst-lp.vercel.app/",
         },
         {
         id : "gole",
@@ -98,7 +98,7 @@ const worksArray : worksArrayType = {
         img : "./img/maturi.jpg",
         text : "祭りを開いている自治体と出店を開きたい人をマッチングさせるサービスです。「お手軽」を大切にしました。",
         imageColor : "#8D0C18",
-        url : "",
+        url : "https://www.figma.com/proto/P4SxOKWuwMavdYKvjd7J1k/Untitled?node-id=2%3A8&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A8&show-proto-sidebar=1",
         },
         {
         id : "osake",
@@ -112,7 +112,7 @@ const worksArray : worksArrayType = {
         img : "./img/osake.jpg",
         text : "お酒初心者の人の恐怖心を無くしてお酒の楽しみ方を教えるサービスです。店舗に加盟していただくサービスになります。",
         imageColor : "#BD6306" , 
-        url : "" , 
+        url : "https://osaketate-lp.vercel.app/" , 
         },
     ]
 };
