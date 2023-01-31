@@ -42,13 +42,13 @@ const WorksSlide = ( props : slideprops ) => {
                     <Text suppressHydrationWarning fontSize={"16px"}>
                         {props.text}
                     </Text>
-                    <Link href={props.url} target={"_blank"} passHref>
-                        <Center w={"100%"} as='button' borderRadius={"8px"} bgColor={props.imageColor} padding={"8px 0"}><Text fontWeight={"bold"} color={"#fefefe"}>作品を見る</Text></Center>
+                    <Link suppressHydrationWarning href={props.url} target={"_blank"} passHref>
+                        <Center suppressHydrationWarning w={"100%"} as='button' borderRadius={"8px"} bgColor={props.imageColor} padding={"8px 0"}><Text fontWeight={"bold"} color={"#fefefe"}>作品を見る</Text></Center>
                     </Link>
                 </Flex>
             </Flex>
             <Flex position="absolute" top={"0"} right={"-220px"}>
-                <Box as='img' src={props.img} w={"462px"} h={"264px"} right={"24px"} top={"19px"} position={"absolute"}></Box>
+                <Box suppressHydrationWarning as='img' src={props.img} w={"462px"} h={"264px"} right={"24px"} top={"19px"} position={"absolute"}></Box>
                 <Box as='img' src='./img/mac-moc.png' w={"514px"} h={"400px"} zIndex={"10"}></Box>
             </Flex>
         </Flex>

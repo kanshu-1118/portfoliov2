@@ -1,4 +1,4 @@
-import React, { NewLifecycle, useState } from 'react'
+import React, { NewLifecycle, useState,useEffect } from 'react'
 import { Box, Center, Flex, Text } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import worksArray from './api/works'
@@ -56,7 +56,37 @@ const App : NextPage = () => {
         }
     }
 
+    // const [scrollY,setScrollY] = useState(0)
+    const [concepttrans,setConcepttrans] = useState("-1000px")
 
+    // const scrollAction = () => {
+    //     setScrollY(window.scrollY)
+    // }
+
+    const ifscroll = () => {
+        
+        // if (window.scrollY >= 500) {
+        //     console.log("発火");
+        //     setConcepttrans("-1px");
+        // }else if(window.scrollY =< 1000){
+        //     setConcepttrans("-1000px")
+        // }
+
+        window.scrollY >= 400 && window.scrollY < 1300 
+        ? setConcepttrans("-1px")
+        : setConcepttrans("-1000px")
+    }
+
+
+    useEffect(()=> {
+        window.addEventListener('scroll', ifscroll )
+        return () => window.removeEventListener('scroll', ifscroll)
+    },[])
+    
+
+
+    // console.log(scrollY);
+    
 
     return (
         <Box overflow={"hidden"}>
@@ -72,8 +102,8 @@ const App : NextPage = () => {
                     今はそれを自分の強みと目標に<br />
                     色んな人と人を繋げれるような人になるために頑張っています。
                 </Text>
-                <Box position={"absolute"} top={"0"} left={"-1px"} as='img' src='./img/concept-img.svg' h={"80vh"}/>
-                <Box position={"absolute"} top={"0"} right={"-1px"} transform={"rotate(180deg)"} as='img' src='./img/concept-img.svg' h={"80vh"}/>
+                <Box position={"absolute"} top={"0"} left={concepttrans} as='img' src='./img/concept-img.svg' h={"80vh"} transition={"0.5s"}/>
+                <Box position={"absolute"} top={"0"} right={concepttrans} transform={"rotate(180deg)"} as='img' src='./img/concept-img.svg' h={"80vh"} transition={"0.5s"}/>
             </Center>
             <Center id='profile' w={"100vw"} h={"80vh"} flexFlow={"column"} position="relative">
                 <Flex w={"762px"} h={"322px"} gap={"32px"} alignItems={"center"} justifyContent={"center"} flexFlow={"column"} boxShadow={"2px 2px 2px 0px rgba(0,0,0,0.25)"}>
