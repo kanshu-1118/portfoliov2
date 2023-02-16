@@ -1,0 +1,9 @@
+const transmove = keyframes`
+    from { transform: translateY(100%); }
+    to { transform: translateX(-100%); 
+        background-color : #000 ; }
+    `
+    const transmoveani : any = prefersReducedMotion
+    ? undefined
+    : `${transmove} 0.7s ease `
+アニメーション    

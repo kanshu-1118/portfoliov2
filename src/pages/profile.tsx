@@ -6,8 +6,8 @@ const Profile = () => {
     return (
         <Box>
             <Header />
-            <Flex paddingTop={106} flexFlow={"column"} w={"100vw"} alignItems="center" gap={"40px"}>
-                <Flex gap={"16px"} alignItems="center">
+            <Flex paddingTop={106} flexFlow={"column"} w={"100vw"} alignItems="center" gap={"100px"}>
+                <Flex gap={"48px"} alignItems="center">
                     <Flex>
                         <Box borderRadius={"16px"} bgImage={"./img/profile.jpg"} w={"300px"} h={"300px"} bgSize={"cover"} bgPos={"right"}></Box>
                     </Flex>
@@ -36,10 +36,12 @@ const Profile = () => {
                         積極的にチームのリーダーに徹しています。
                     </Text>
                 </Center>
-                <Text fontSize={"32px"} fontWeight={"bold"}>表彰歴</Text>
-                <Flex gap={"8px"} padding={"24px 56px"} boxShadow={"2px 2px 2px 0px rgba(0,0,0,0.25)"}>
-                    <Text fontWeight={"bold"}>2022年開催若年者ものづくり大会 銅賞受賞</Text>
-                </Flex>
+                <Center flexFlow={"column"}>
+                    <Text fontSize={"32px"} fontWeight={"bold"}>表彰歴</Text>
+                    <Flex gap={"8px"} padding={"24px 56px"} boxShadow={"2px 2px 2px 0px rgba(0,0,0,0.25)"}>
+                        <Text fontWeight={"bold"}>2022年開催若年者ものづくり大会 銅賞受賞</Text>
+                    </Flex>
+                </Center>
             </Flex>
             <Center id='CONTACT' w={"100vw"} h={"80vh"} gap={"48px"} flexFlow={"column"} position="relative">
                 <Text as={"h3"} fontSize={"46px"} fontWeight={"900"} >CONTACT</Text>
