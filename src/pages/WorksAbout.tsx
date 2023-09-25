@@ -7,24 +7,11 @@ import Link from "next/link"
 
 const array = worksArray.ArrayList
 
-const Works : NextPage = () => {
+const WorksAbout : NextPage = () => {
     return (
         <Box>
             <Header />
-            <Center padding={"106px 0 40px 0"}>
-                <Text fontSize={"46px"} fontWeight={"bold"}>Works</Text>
-            </Center>
-            <Flex flexWrap={"wrap"} justifyContent={"center"} gap={"24px"}>
-                {array.map((e : any,i : any) => {
-                    return(
-                        <Link
-                            href={{ pathname: `/works/workAbout` , query:`${e}` }}
-                        >
-                            <WorksSlide key={i} name={e.name} type={e.type} sch={e.sch} nop={e.nop} main={e.main} time={e.time} text={e.text} imageColor={e.imageColor} img={e.img} url={e.url} />
-                        </Link>
-                    )
-                })}
-            </Flex>
+                
             <Center id='TRAING' w={"100vw"} h={"80vh"} gap={"48px"} flexFlow={"column"} position="relative">
                 <Text as={"h3"} fontSize={"46px"} fontWeight={"900"} >CONTACT</Text>
                 <Flex gap={"32px"}>
@@ -47,4 +34,4 @@ const Works : NextPage = () => {
     )
 }
 
-export default Works
+export default WorksAbout

@@ -183,9 +183,9 @@ const App : NextPage = () => {
 
 
     return (
-        <Box overflow={"hidden"} transform={transform} transition="0.01s 0.75s ease">
+        <Box overflow={"hidden"} transition="0.5s 0.25 ease">
             <Box >
-                <Box id='fog' bgColor={`White`} zIndex={"100"} transition={"1s ease"} position="absolute" top={"0"} opacity={opacity} w={"100vw"} h={`100%`} ></Box>
+                {/* <Box id='fog' bgColor={`White`} zIndex={"100"} transition={"1s ease"} position="absolute" top={"0"} opacity={opacity} w={"100vw"} h={`100%`} ></Box> */}
                 <Header />
                 <Flex id='firstview' w="100vw" h="100vh" bg={"linear-gradient(#0025A8,#0018EF,#8F00FF)"} alignItems={"center"} justifyContent={"center"} flexFlow={"column"} position={"relative"}>
                     <Text as={"h1"} fontWeight="bold" color={"whiteAlpha.800"} fontSize={"40px"} zIndex={"99"}>KANSHU SHIMOKAWA</Text>
