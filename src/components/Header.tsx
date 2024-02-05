@@ -49,13 +49,13 @@ const Header : NextComponentType = () => {
     return (
         <Flex position={"fixed"} transition={"0.25s"} top={headerTop} zIndex={"100"} bgColor="whiteAlpha.500" w="100vw" h={"66px"} justifyContent="end" boxShadow={"0px 0px 4px 0px rgba(0,0,0,0.25)"}>
             <Flex gap={"48px"} paddingRight={"64px"}>
-                <NextLink href={`/`} passHref>
+                <NextLink href={`/ecc/creator/sakuhin/2022/portfolio/wd2a17`} passHref>
                     <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>TOP</Text>
                 </NextLink>
-                <NextLink href={`/Works`} passHref>
+                <NextLink href={`/ecc/creator/sakuhin/2022/portfolio/wd2a17/Works`} passHref>
                     <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>WORKS</Text>
                 </NextLink>
-                <NextLink href={`/profile`} passHref>
+                <NextLink href={`/ecc/creator/sakuhin/2022/portfolio/wd2a17/profile`} passHref>
                     <Text as={"p"} h={"100%"} lineHeight={"66px"} fontSize={"20px"}>PROFILE</Text>
                 </NextLink>
                 {/* <NextLink href={`/Contact`} passHref>

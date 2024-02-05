@@ -39,7 +39,7 @@ const worksArray : worksArrayType = {
         time : 30,
         sch : "1年生前期",
         main : "LP",
-        img : "./img/nonst.jpg",
+        img : "/img/nonst.jpg",
         text : '1年生の夏休み時期に制作した学内短期制作にて制作したものです、愚痴を聞く人と話す人のマッチングアプリサービスです。',
         imageColor : "#0A345A",
         url : "https://nonst-lp.vercel.app/",

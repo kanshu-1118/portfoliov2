@@ -8,7 +8,6 @@ const workAbout = () => {
     
     return (
         <Flex>
-
         </Flex>
     )
 }
